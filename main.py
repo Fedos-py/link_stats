@@ -5,7 +5,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'Привет, мир! Эта страница - начало моего проекта Link Statistic. dev: @Fedos-py'
+    return '<center>Привет, мир! Эта страница - начало моего проекта Link Statistic.<br>' \
+           '<a href="/about">Больше информации о проекте</a><br>' \
+           'dev: <a href="https://github.com/Fedos-py">@Fedos-py</a></center>'
 
 
 @app.route('/about')
